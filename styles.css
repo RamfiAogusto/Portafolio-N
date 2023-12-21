@@ -1,0 +1,65 @@
+:root{
+    --background:#2d2d2d;
+    --backgroundsec:#3a3939;
+    --primary:#0d9ed8;
+    --text:#ffffff;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background);
+    color: var(--text);
+    
+}
+
+
+nav{
+    background-color: var(--backgroundsec);
+    position: fixed;
+    right: 0px;
+    top: 10%;
+    margin: 20px;
+    width: 50px;
+    border-radius: 30px;
+    height: 70%;
+    padding: 5px;
+    
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav>ul>li{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
+}
+nav>ul>li>a{
+    display: flex;
+}
+
+
+nav>ul>li>a>svg{
+    width: 40px;
+}
+/*agregar una animacion al nav*/
+@keyframes glow {
+    0% {box-shadow: 0 0 5px #fff;}
+    50% {box-shadow: 0 0 15px #fff;}
+    100% {box-shadow: 0 0 5px #fff;}
+    }
+    nav>ul>li:hover{
+        animation: glow 1s infinite;
+        }
