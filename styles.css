@@ -1,30 +1,30 @@
-:root{
-    --background:#2d2d2d;
-    --backgroundsec:#3a3939;
-    --primary:#0d9ed8;
-    --text:#ffffff;
+:root {
+    --background: #2d2d2d;
+    --backgroundsec: #3a3939;
+    --primary: #0d9ed8;
+    --text: #ffffff;
 }
 
-body{
+body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     background-color: var(--background);
     color: var(--text);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
-
-h1{
+/* ----------------------------PRESENTACION-------------------- */
+h1 {
     font-weight: 700;
     font-size: 32px;
 }
 
-p{
+p {
     padding-bottom: 6px;
     font-weight: 400;
 }
-nav{
+nav {
     background-color: var(--backgroundsec);
     display: flex;
     justify-content: center;
@@ -40,14 +40,18 @@ nav{
     z-index: 2;
     animation: appear 1s;
 }
-    @keyframes appear{
-    0%{opacity: 0; transform: translateY(-20px)}
-    100%{ opacity: 1; transform: translateY(0) }
-    
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-
-nav>ul{
+nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -56,57 +60,53 @@ nav>ul{
     height: 100%;
 }
 
-nav>ul>li{
+nav > ul > li {
     display: flex;
     justify-content: center;
     padding: 1px;
     background-color: var(--primary);
     border-radius: 50%;
-    
 }
 
-
-    nav>ul>li>a{
+nav > ul > li > a {
     display: flex;
 }
 
-
-
 /*agregar una animacion al nav*/
 @keyframes glow {
-    0% {box-shadow: 0 0 5px #fff;}
-    50% {box-shadow: 0 0 15px #fff;}
-    100% {box-shadow: 0 0 5px #fff;}
+    0% {
+        box-shadow: 0 0 5px #fff;
     }
-    nav>ul>li:hover{
-        animation: glow 1s infinite;
-        }
+    50% {
+        box-shadow: 0 0 15px #fff;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff;
+    }
+}
+nav > ul > li:hover {
+    animation: glow 1s infinite;
+}
 
-
-
-
-nav>ul>li>a{
+nav > ul > li > a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-nav>ul>li>a>svg{
+nav > ul > li > a > svg {
     width: 30px;
     margin: 3px;
 }
 
-.presentacion{
+.presentacion {
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
     padding: 64px;
-    
 }
 
-
-.container-img-perfil{
+.container-img-perfil {
     border: 8px solid var(--primary);
     box-shadow: 0px 0px 20px 10px var(--primary);
     width: 390px;
@@ -118,30 +118,27 @@ nav>ul>li>a>svg{
     z-index: 2;
 }
 
-.container-img-perfil>img{
+.container-img-perfil > img {
     position: relative;
     bottom: -19px;
 }
 
-
-.present{
+.present {
     margin: 64px 150px 0px 64px;
     max-width: 500px;
 }
 
-
-.h{
+.h {
     position: absolute;
-    width: 100vw;
-    
+    width: 98vw;
 }
 
-.al-frente{
+.al-frente {
     z-index: 6;
     position: relative;
 }
 
-.button1{
+.button1 {
     text-decoration: none;
     background-color: var(--primary);
     height: fit-content;
@@ -151,7 +148,7 @@ nav>ul>li>a>svg{
     border-radius: 6px;
 }
 
-.botones{
+.botones {
     display: flex;
     gap: 40px;
     border-radius: 16px;
@@ -159,18 +156,56 @@ nav>ul>li>a>svg{
     height: fit-content;
 }
 
-.redes{
+.redes {
     display: flex;
     gap: 16px;
 }
 
-.redes a{
+.redes a {
     padding: 4px;
     display: inline-block;
-    
+
     width: fit-content;
     border-radius: 6px;
 }
-.redes a img{
+.redes a img {
     width: 50px;
 }
+
+.gradient {
+    width: 90vw;
+    height: 100px;
+    background: rgb(45, 45, 45);
+    background: linear-gradient(
+        0deg,
+        rgba(45, 45, 45, 1) 61%,
+        rgba(45, 45, 45, 0.8239670868347339) 82%,
+        rgba(45, 45, 45, 0.025647759103641476) 100%
+    );
+    position: absolute;
+    bottom: -1px;
+}
+
+#presentacion{
+    margin-bottom: 200px;
+}
+
+
+/* ------------------------PRESENTACION-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
