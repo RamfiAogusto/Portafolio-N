@@ -20,6 +20,10 @@ h1 {
     font-size: 32px;
 }
 
+h2{
+    color: var(--primary);
+}
+
 p {
     padding-bottom: 6px;
     font-weight: 400;
@@ -92,12 +96,16 @@ nav > ul > li > a {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 35px;
+    max-height: 35px;
+    overflow: hidden;
+    
 }
 
-nav > ul > li > a > svg {
-    width: 30px;
+nav>ul>li>a:first-child {
     margin: 3px;
 }
+
 
 .presentacion {
     display: flex;
@@ -173,7 +181,7 @@ nav > ul > li > a > svg {
 }
 
 .gradient {
-    width: 90vw;
+    width: 98vw;
     height: 100px;
     background: rgb(45, 45, 45);
     background: linear-gradient(
@@ -193,19 +201,31 @@ nav > ul > li > a > svg {
 
 /* ------------------------PRESENTACION-------------------- */
 
+/* -----------------------aboutme-------------------------- */
+
+.aboutme{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_aboutme{
+    max-width: 500px;
+}
+
+.img_aboutme img{
+    width: 100%;
+    }
+
+.text_aboutme{
+    width: 30%;
+    text-align: center;
+}
+/* -----------------------aboutme-------------------------- */
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------- */
