@@ -4,6 +4,7 @@
     --backgroundsec: #3a3939;
     --primary: #0d9ed8;
     --text: #f3e7e7;
+    --secondary-filter: brightness(0) saturate(100%) invert(94%) sepia(59%) saturate(1406%) hue-rotate(98deg) brightness(89%) contrast(91%);
 }
 
 body {
@@ -187,12 +188,33 @@ nav > ul > li > a:first-child {
 .redes a {
     padding: 4px;
     display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 0 var(--primary);
+    border: 2px solid var(--primary);
 
-    width: fit-content;
+    width: 30px;
+    height: 30px;
     border-radius: 6px;
+    
+}
+
+.redes a:hover{
+    background-color: var(--primary);
+    transform: translate(5px,5px);
+    box-shadow: 0 0 0 var(--secondary);
+    
+    transition: transform .2s linear,background-color .2s linear,box-shadow .2s linear;
+    
 }
 .redes a img {
-    width: 50px;
+    width: 30px;
+    filter: invert(41%) sepia(100%) saturate(2160%) hue-rotate(186deg) brightness(91%) contrast(97%);
+}
+
+.redes a:hover img{
+    filter: invert(76%) sepia(23%) saturate(2723%) hue-rotate(195deg) brightness(113%) contrast(99%);
 }
 
 .gradient {
@@ -326,7 +348,13 @@ article{
     border-radius: 6px;
 }
 
-/* .info_container{} */
+.preview_container:hover{
+    background-position: center;
+    background-size: 120%;
+    transition: 0.5s ease;
+}
+
+
 
 .info_container h5{
     font-size: 20px;
@@ -346,7 +374,7 @@ article{
 
 .buttons_container{
     display: grid;
-    grid-template-columns: 1fr 8rem;
+    grid-template-columns: 1fr 5rem;
     gap: .5rem;
     
 }
@@ -372,6 +400,16 @@ article{
 }
 
 
+.buttons_container button:hover{
+    background-color: var(--background);
+    color: var(--primary);
+    text-shadow: var(--primary) 0px 0px 7px;
+}
+
+.buttons_container button:hover img{
+    filter: var(--secondary-filter);
+    
+}
 
 
 
