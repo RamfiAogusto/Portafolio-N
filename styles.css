@@ -1,10 +1,11 @@
 :root {
     --background: #2d2d2d;
     --f: #313131;
-    --backgroundsec: #3a3939;
+    --backgroundsec: hsl(0, 1%, 23%);
     --primary: #0d9ed8;
     --text: #f3e7e7;
     --secondary-filter: brightness(0) saturate(100%) invert(94%) sepia(59%) saturate(1406%) hue-rotate(98deg) brightness(89%) contrast(91%);
+    --bg-gradient-jet: linear-gradient( to bottom right, hsla(240, 3%, 81%, 0.251) 0%, hsl(0, 1%, 23%) 100% ), hsl(0, 1%, 23%);
 }
 
 body {
@@ -15,6 +16,15 @@ body {
     color: var(--text);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+*{
+    transition: ease .2s;
+    
+}
+*::selection{
+    color: var(--backgroundsec);
+    background-color: var(--primary);
 }
 /* ----------------------------PRESENTACION-------------------- */
 h1 {
@@ -309,7 +319,8 @@ nav > ul > li > a:first-child {
     padding: 8px 10px;
     gap: 8px;
 }
-li:hover {
+
+.card_skill ul li:hover {
     background-color: var(--f);
 }
 .skill_img {
@@ -333,12 +344,24 @@ li:hover {
 }
 article{
     background-color: var(--backgroundsec);
+    position: relative;
     width: 350px;
     min-height: fit-content;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 50px;
     }
+
+article::before{
+    content: "";
+    position: absolute;
+    
+    inset: -1px;
+    box-sizing: border-box;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
 
 .preview_container{
     background-image: url(img/Captura\ de\ pantalla\ \(36\).png);
@@ -358,7 +381,7 @@ article{
 
 .info_container h5{
     font-size: 20px;
-    margin: 30px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .kills{
@@ -411,9 +434,102 @@ article{
     
 }
 
-
-
-
-
-
 /* ---------------------------PROYECTOS--------------------------- */
+
+/* --------------------------------contacto------------------------ */
+
+.container_contactos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.formulario{
+    max-width: fit-content;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 40px;
+}
+
+.contactos{
+    max-width: 500px;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    height: 40px;
+    color: var(--text);
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+label{
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+input:focus-visible{
+    border: 2px solid var(--primary);
+    
+    
+    
+
+}
+
+.msj{
+    box-sizing: border-box;
+    height: 200px;
+    background-color: var(--background);
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+    margin-bottom: 20px;
+    outline: none;
+    color: var(--text);
+    resize: none;
+    font-size: 16px;
+
+}
+
+.msj:focus-visible{
+    border: 2px solid var(--primary);
+
+}
+
+.formulario button{
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 32px;
+    padding: 4px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 0 var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    color: var(--text);
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    transform: translate(5px,5px);
+    box-shadow: 0 0 0 var(--secondary);
+    
+    transition: transform .2s linear,background-color .2s linear,box-shadow .2s linear;
+    
+
+}
+/* --------------------------------contacto------------------------ */
+
