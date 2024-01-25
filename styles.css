@@ -680,3 +680,100 @@ input:focus-visible {
     /* --------contactos---------- */
     
 }
+
+
+@media only screen and (max-width: 900px) {
+    nav{
+        display: none;
+    }
+    #presentacion{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .container-img-perfil{
+        width: 39px;
+        height: 39px;
+        min-width: 289px;
+        min-height: 289px;
+    }
+    .container-img-perfil img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .present{
+        text-align: center;
+        margin: 0px;
+        margin-top: 60px;
+        z-index: 10;
+    }
+    .gradient{
+        z-index: 1;
+    }
+    .h{
+        height: 98%;
+    }
+    .botones{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme{
+        margin-top: 110px;
+        margin-bottom: 200px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+    .img_aboutme{
+        display: flex;
+        justify-content: center;
+    }
+    .img_aboutme img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .text_aboutme{
+        width: 80%;
+    }
+    /* --------skills---------- */
+    #skills h2{
+        margin-bottom: 30px;
+    }
+    .container_cards_skills{
+        gap: 50px;
+    }
+    /* --------skills---------- */
+    /* --------proyectos---------- */
+    .container_proyectos article{
+        width: 300px;
+    }
+    /* --------proyectos---------- */
+    /* --------contactos---------- */
+    
+    .container_contactos{
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        width: 80%;
+    }
+    .contactos{
+        margin-bottom: 160px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contactos .redes{
+        
+        justify-content: center;
+    }
+    .spans{
+    align-items: start;
+    }
+    /* --------contactos---------- */
+    
+}
