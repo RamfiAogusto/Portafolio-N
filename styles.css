@@ -18,7 +18,8 @@ body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    background-color: var(--background);
+    background-color: rgb(24 24 27/1);
+    background-image: url(img/descarga.png);
     color: var(--text);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -31,14 +32,43 @@ body {
     color: var(--backgroundsec);
     background-color: var(--primary);
 }
+
+.line{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    z-index: 10;
+
+}
+.line li{
+    display: inline-block;
+    background-color: var(--backgroundsec);
+    border-radius: 50px;
+    height: 3px;
+}
+
+.line li:nth-of-type(1){
+    width: 70px;
+
+}
+.line li:nth-of-type(2){
+    width: 20px;
+
+}
+.line li:nth-of-type(3){
+    width: 7px;
+
+}
 /* ----------------------------PRESENTACION-------------------- */
 h1 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 h2 {
     color: var(--primary);
+    font-size: 32px;
 }
 
 p {
@@ -169,7 +199,7 @@ nav > ul > li > a:first-child {
     height: fit-content;
 }
 
-.presentacion button {
+#btn{
     padding: 10px 20px;
     text-transform: uppercase;
     border-radius: 8px;
@@ -183,6 +213,7 @@ nav > ul > li > a:first-child {
     border: 1px solid #ffffff80;
     transition: 0.5s ease;
     user-select: none;
+    text-decoration: none;
 }
 
 #btn:hover {
@@ -252,7 +283,9 @@ nav > ul > li > a:first-child {
 /* ------------------------PRESENTACION-------------------- */
 
 /* -----------------------aboutme-------------------------- */
-
+#aboutme{
+    margin-top: 250px;
+}
 .aboutme {
     display: flex;
     gap: 100px;
@@ -277,10 +310,20 @@ nav > ul > li > a:first-child {
 /* ---------------------------SKILLS---------------------------- */
 
 #skills {
+    position: relative;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 
+#skills h2{
+    padding-bottom: 50px;
+}
+
+#skills .line{
+    left: 560px;
+    top: 40px;
+}
 .container_cards_skills {
     display: flex;
     gap: 20px;
@@ -338,6 +381,18 @@ nav > ul > li > a:first-child {
 
 /* ---------------------------SKILLS---------------------------- */
 /* ---------------------------PROYECTOS--------------------------- */
+#proyectos{
+    position: relative;
+}
+#proyectos>h2{
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#proyectos .line{
+    left: 600px;
+    top: 40px;
+}
 
 .container_proyectos {
     display: flex;
