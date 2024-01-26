@@ -157,6 +157,7 @@ nav > ul > li > a:first-child {
     flex-direction: row-reverse;
     justify-content: start;
     padding: 64px;
+    padding-top: 120px;
 }
 
 .container-img-perfil {
@@ -235,7 +236,7 @@ nav > ul > li > a:first-child {
     display: inline-block;
     padding: 8px;
     border-radius: 10px;
-    background-color: var(--background);
+    background-color: transparent;
     box-shadow: 5px 5px 0 var(--primary);
     border: 2px solid var(--primary);
     width: 30px;
@@ -262,19 +263,6 @@ nav > ul > li > a:first-child {
         brightness(113%) contrast(99%);
 }
 
-.gradient {
-    width: 98vw;
-    height: 100px;
-    background: rgb(45, 45, 45);
-    background: linear-gradient(
-        0deg,
-        rgba(45, 45, 45, 1) 61%,
-        rgba(45, 45, 45, 0.8239670868347339) 82%,
-        rgba(45, 45, 45, 0.025647759103641476) 100%
-    );
-    position: absolute;
-    bottom: -1px;
-}
 
 #presentacion {
     margin-bottom: 200px;
@@ -335,12 +323,19 @@ nav > ul > li > a:first-child {
 .card_skill {
     min-width: 270px;
     max-width: 270px;
-    background-color: var(--backgroundsec);
+    
     flex-wrap: wrap;
     text-align: center;
     padding: 10px;
     border-radius: 6px;
-    box-shadow: var(--text) 0px 3px 6px -2px;
+    
+
+    background: rgba(13, 158, 216, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(13, 158, 216, 0.43);
 }
 
 .card_skill h3 {
@@ -401,25 +396,23 @@ nav > ul > li > a:first-child {
     flex-wrap: wrap;
 }
 article {
-    background-color: var(--backgroundsec);
+    
     position: relative;
     width: 350px;
     min-height: fit-content;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 50px;
+    
+    background: rgba(13, 158, 216, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(13, 158, 216, 0.43);
 }
 
-article::before {
-    content: "";
-    position: absolute;
 
-    inset: -1px;
-    box-sizing: border-box;
-    background: var(--bg-gradient-jet);
-    border-radius: inherit;
-    z-index: -1;
-}
 
 .preview_container {
     background-image: url(img/Captura\ de\ pantalla\ \(36\).png);
@@ -536,7 +529,7 @@ input:focus-visible {
 .msj {
     box-sizing: border-box;
     height: 200px;
-    background-color: var(--background);
+    background-color: transparent;
     border-radius: 6px;
     border: 1px solid var(--primary);
     margin-bottom: 20px;
@@ -558,7 +551,7 @@ input:focus-visible {
     display: inline-block;
     padding: 8px;
     border-radius: 10px;
-    background-color: var(--background);
+    background-color: transparent;
     box-shadow: 5px 5px 0 var(--primary);
     border: 2px solid var(--primary);
     border-radius: 6px;
@@ -589,7 +582,7 @@ input:focus-visible {
     display: inline-block;
     padding: 8px;
     border-radius: 10px;
-    background-color: var(--background);
+    background-color: transparent;
     box-shadow: 5px 5px 0 var(--primary);
     border: 2px solid var(--primary);
     width: 40px;
@@ -648,6 +641,7 @@ input:focus-visible {
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+        padding-top: 50px;
     }
     .container-img-perfil{
         width: 39px;
@@ -701,6 +695,9 @@ input:focus-visible {
     #skills h2{
         margin-bottom: 30px;
     }
+    #skills .line{
+        left: 80px;
+    }
     .container_cards_skills{
         gap: 50px;
     }
@@ -708,6 +705,9 @@ input:focus-visible {
     /* --------proyectos---------- */
     .container_proyectos article{
         width: 280px;
+    }
+    #proyectos .line{
+        left: 125px;
     }
     /* --------proyectos---------- */
     /* --------contactos---------- */
@@ -745,6 +745,7 @@ input:focus-visible {
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+        padding-top: 70px;
     }
     .container-img-perfil{
         width: 39px;
@@ -798,6 +799,9 @@ input:focus-visible {
     #skills h2{
         margin-bottom: 30px;
     }
+    #skills .line{
+        left: 270px;
+    }
     .container_cards_skills{
         gap: 50px;
     }
@@ -805,6 +809,9 @@ input:focus-visible {
     /* --------proyectos---------- */
     .container_proyectos article{
         width: 300px;
+    }
+    #proyectos .line{
+        left: 310px;
     }
     /* --------proyectos---------- */
     /* --------contactos---------- */
