@@ -392,10 +392,13 @@ nav > ul > li > a:first-child {
 article {
     position: relative;
     width: 350px;
-    min-height: fit-content;
+    height: fit-content;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     background: rgba(13, 158, 216, 0);
     border-radius: 16px;
