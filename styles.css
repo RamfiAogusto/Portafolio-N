@@ -514,8 +514,10 @@ form {
     margin: 40px;
 }
 
-.contactos {
-    max-width: 500px;
+#contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
