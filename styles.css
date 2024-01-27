@@ -415,13 +415,13 @@ article {
     border-radius: 6px;
 }
 
+article #shorter{
+    background-image: url(img/proyectos/shorten.jpg);
+}
 article #hoster{
     background-image: url(img/proyectos/hosterStarter.jpg);
 }
 
-article #shorter{
-    background-image: url(img/proyectos/shorten.jpg);
-}
 
 .preview_container:hover {
     background-position: center;
