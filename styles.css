@@ -37,8 +37,9 @@ body {
 .line {
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     position: absolute;
+    left: calc(50% - 50px) ;
     z-index: 10;
 }
 .line li {
@@ -58,6 +59,15 @@ body {
     width: 7px;
 }
 
+.subtitulo{
+    position: relative;
+    margin-bottom: 60px;
+}
+.subtitulo h2{
+    padding: 0px;
+    margin: 0px;
+
+}
 /* ----------------------------PRESENTACION-------------------- */
 h1 {
     font-weight: 700;
@@ -152,7 +162,15 @@ nav > ul > li > a {
 nav > ul > li > a:first-child {
     margin: 3px;
 }
+/* ------------------presentacion----------------- */
 
+#presentacion {
+    margin-bottom: 100px;
+}
+.container_presentacion{
+    display: flex;
+    justify-content: center;
+}
 .presentacion {
     display: flex;
     flex-direction: row-reverse;
@@ -181,7 +199,7 @@ nav > ul > li > a:first-child {
 }
 
 .present {
-    margin: 64px 150px 0px 64px;
+    margin: 45px 150px 0px -65px;
     max-width: 500px;
 }
 
@@ -270,9 +288,7 @@ nav > ul > li > a:first-child {
         brightness(113%) contrast(99%);
 }
 
-#presentacion {
-    margin-bottom: 200px;
-}
+
 
 /* ------------------------PRESENTACION-------------------- */
 
@@ -283,7 +299,7 @@ nav > ul > li > a:first-child {
     gap: 100px;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 0px;
 
 }
 
@@ -302,9 +318,9 @@ nav > ul > li > a:first-child {
     text-align: center;
 }
 /* -----------------------aboutme-------------------------- */
-/* ----------esperiencia */
+/* ----------experiencia */
 .timeline-section {
-    min-height: 100vh;
+    margin: 90px 0px;
     padding: 50px 15px 25px;
 }
 .timeline-section h2{
@@ -394,21 +410,18 @@ nav > ul > li > a:first-child {
         left: 0;
     }
 }
-/* ----------esperiencia */
+/* ----------experiencia */
 /* ---------------------------PROYECTOS--------------------------- */
 #proyectos {
     position: relative;
+    text-align: center;
+    margin-bottom: 90px;
 }
 #proyectos > h2 {
     text-align: center;
-    margin-bottom: 90px;
-    margin-top: 0px;
+
 }
 
-#proyectos .line {
-    left: 600px;
-    top: 40px;
-}
 
 .container_proyectos {
     display: flex;
@@ -422,11 +435,11 @@ article {
     height: fit-content;
     padding: 10px;
     border-radius: 6px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    text-align: start;
     background: rgba(13, 158, 216, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -522,14 +535,7 @@ article #hoster {
     margin-bottom: 100px;
 }
 
-#skills h2 {
-    padding-bottom: 50px;
-}
 
-#skills .line {
-    left: 560px;
-    top: 40px;
-}
 .container_cards_skills {
     display: flex;
     gap: 20px;
@@ -593,122 +599,7 @@ article #hoster {
 
 /* ---------------------------SKILLS---------------------------- */
 
-/* ----------------animaciones article */
 
-article {
-    box-sizing: border-box;
-}
-
-article::after {
-    padding: 10px 50px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: transparent;
-    position: relative;
-}
-
-article::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: "GLITCH";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-}
-
-article:hover::after {
-    animation: glitch_4011 1s;
-    animation-timing-function: steps(2, end);
-    background-color: transparent;
-    border: 3px solid rgb(0, 255, 213);
-}
-
-article:hover {
-    background-color: transparent;
-    border: 1px solid rgb(0, 255, 213);
-    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
-    animation: glitch_text 1s;
-}
-@keyframes glitch_text {
-    0% {
-        text-shadow: 10 10px 10px black;
-    }
-    10% {
-        text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #e94be8;
-    }
-    20% {
-        text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #e94be8;
-    }
-}
-@keyframes glitch_4011 {
-    0% {
-        clip-path: var(--move1);
-        transform: translate(0px, -10px);
-    }
-
-    10% {
-        clip-path: var(--move2);
-        transform: translate(-10px, 10px);
-    }
-
-    20% {
-        clip-path: var(--move3);
-        transform: translate(10px, 0px);
-    }
-
-    30% {
-        clip-path: var(--move4);
-        transform: translate(-10px, 10px);
-    }
-
-    40% {
-        clip-path: var(--move5);
-        transform: translate(10px, -10px);
-    }
-
-    50% {
-        clip-path: var(--move6);
-        transform: translate(-10px, 10px);
-    }
-
-    60% {
-        clip-path: var(--move1);
-        transform: translate(10px, -10px);
-    }
-
-    70% {
-        clip-path: var(--move3);
-        transform: translate(-10px, 10px);
-    }
-
-    80% {
-        clip-path: var(--move2);
-        transform: translate(10px, -10px);
-    }
-
-    90% {
-        clip-path: var(--move4);
-        transform: translate(-10px, 10px);
-    }
-
-    100% {
-        clip-path: var(--move1);
-        transform: translate(0);
-    }
-}
-/* -----------------------------animaciones article */
-
-/* ---------------------------PROYECTOS--------------------------- */
 
 /* --------------------------------contacto------------------------ */
 
@@ -734,6 +625,10 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#contactos .subtitulo{
+    margin-bottom: 0px;
 }
 
 input {
@@ -931,9 +826,7 @@ input:focus-visible {
     #skills h2 {
         margin-bottom: 30px;
     }
-    #skills .line {
-        left: 10px;
-    }
+
     .container_cards_skills {
         gap: 50px;
     }
@@ -942,9 +835,7 @@ input:focus-visible {
     .container_proyectos article {
         width: 280px;
     }
-    #proyectos .line {
-        left: 125px;
-    }
+
     /* --------proyectos---------- */
     /* --------contactos---------- */
 
@@ -1035,12 +926,8 @@ input:focus-visible {
     #skills {
         margin-bottom: 0px;
     }
-    #skills h2 {
-        margin-bottom: 30px;
-    }
-    #skills .line {
-        left: 142px;
-    }
+
+
     .container_cards_skills {
         gap: 50px;
     }
@@ -1048,9 +935,6 @@ input:focus-visible {
     /* --------proyectos---------- */
     .container_proyectos article {
         width: 300px;
-    }
-    #proyectos .line {
-        left: 150px;
     }
     /* --------proyectos---------- */
     /* --------contactos---------- */
