@@ -83,6 +83,7 @@ h2 {
 p {
     padding-bottom: 6px;
     font-weight: 400;
+
 }
 nav {
     background-color: var(--backgroundsec);
@@ -189,6 +190,8 @@ nav > ul > li > a:first-child {
     border-radius: 50%;
     overflow: hidden;
     z-index: 2;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
 }
 
 .container-img-perfil > img {
@@ -201,8 +204,14 @@ nav > ul > li > a:first-child {
 .present {
     margin: 45px 150px 0px -65px;
     max-width: 500px;
+    animation-name: zoomIn;
+    animation-duration: 1s;
 }
 
+.present h2{
+    animation: tada;
+    animation-duration: 2s;
+}
 .h {
     position: absolute;
     width: 98vw;
@@ -237,6 +246,8 @@ nav > ul > li > a:first-child {
     user-select: none;
     text-decoration: none;
     filter: var(--sombra);
+    animation: tada;
+    animation-duration: 2s;
 
 }
 
