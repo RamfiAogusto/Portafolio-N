@@ -473,6 +473,12 @@ article #hoster {
     background-image: url(img/proyectos/hosterStarter.jpg);
 }
 
+article #drafa {
+    background-image: url(img/proyectos/drafapeluqueria.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
 
 .info_container h5 {
     font-size: 20px;
