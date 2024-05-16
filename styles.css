@@ -479,6 +479,9 @@ article #drafa {
     background-size: cover;
     
 }
+article #burger {
+    background-image: url(img/proyectos/Burger.png);
+}
 
 .info_container h5 {
     font-size: 20px;
