@@ -39,7 +39,7 @@ body {
     padding: 0px;
     margin: auto;
     position: absolute;
-    left: calc(50% - 50px) ;
+    left: calc(50% - 50px);
     z-index: 10;
 }
 .line li {
@@ -59,20 +59,72 @@ body {
     width: 7px;
 }
 
-.subtitulo{
+.subtitulo {
     position: relative;
     margin-bottom: 60px;
 }
-.subtitulo h2{
+.subtitulo h2 {
     padding: 0px;
     margin: 0px;
+}
 
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    background-color: rgba(0, 0, 0, 0.623);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: var(--background);
+    border-radius: 6px;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#newVersionButton{
+    border: 2px solid;
+    border-color: var(--primary);
 }
 /* ----------------------------PRESENTACION-------------------- */
 h1 {
     font-weight: 700;
     font-size: 36px;
-
 }
 
 h2 {
@@ -83,7 +135,6 @@ h2 {
 p {
     padding-bottom: 6px;
     font-weight: 400;
-
 }
 nav {
     background-color: var(--backgroundsec);
@@ -168,7 +219,7 @@ nav > ul > li > a:first-child {
 #presentacion {
     margin-bottom: 100px;
 }
-.container_presentacion{
+.container_presentacion {
     display: flex;
     justify-content: center;
 }
@@ -198,7 +249,6 @@ nav > ul > li > a:first-child {
     position: relative;
     bottom: -19px;
     filter: var(--sombra);
-
 }
 
 .present {
@@ -208,7 +258,7 @@ nav > ul > li > a:first-child {
     animation-duration: 1s;
 }
 
-.present h2{
+.present h2 {
     animation: tada;
     animation-duration: 2s;
 }
@@ -248,7 +298,6 @@ nav > ul > li > a:first-child {
     filter: var(--sombra);
     animation: tada;
     animation-duration: 2s;
-
 }
 
 #btn:hover {
@@ -277,7 +326,6 @@ nav > ul > li > a:first-child {
     height: 30px;
     border-radius: 6px;
     filter: var(--sombra);
-
 }
 
 .redes a:hover {
@@ -299,8 +347,6 @@ nav > ul > li > a:first-child {
         brightness(113%) contrast(99%);
 }
 
-
-
 /* ------------------------PRESENTACION-------------------- */
 
 /* -----------------------aboutme-------------------------- */
@@ -311,7 +357,6 @@ nav > ul > li > a:first-child {
     justify-content: center;
     align-items: center;
     margin-top: 0px;
-
 }
 
 .img_aboutme {
@@ -320,8 +365,6 @@ nav > ul > li > a:first-child {
 
 .img_aboutme img {
     width: 100%;
-    
-
 }
 
 .text_aboutme {
@@ -334,7 +377,7 @@ nav > ul > li > a:first-child {
     margin: 90px 0px;
     padding: 50px 15px 25px;
 }
-.timeline-section h2{
+.timeline-section h2 {
     text-align: center;
 }
 .timeline-items {
@@ -343,7 +386,6 @@ nav > ul > li > a:first-child {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    
 }
 .timeline-items::before {
     content: "";
@@ -430,9 +472,7 @@ nav > ul > li > a:first-child {
 }
 #proyectos > h2 {
     text-align: center;
-
 }
-
 
 .container_proyectos {
     display: flex;
@@ -477,7 +517,6 @@ article #drafa {
     background-image: url(img/proyectos/drafapeluqueria.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 article #burger {
     background-image: url(img/proyectos/Burger.png);
@@ -555,7 +594,6 @@ article #burger {
     margin-bottom: 100px;
 }
 
-
 .container_cards_skills {
     display: flex;
     gap: 20px;
@@ -619,8 +657,6 @@ article #burger {
 
 /* ---------------------------SKILLS---------------------------- */
 
-
-
 /* --------------------------------contacto------------------------ */
 
 .container_contactos {
@@ -647,7 +683,7 @@ form {
     align-items: center;
 }
 
-#contactos .subtitulo{
+#contactos .subtitulo {
     margin-bottom: 0px;
 }
 
@@ -946,7 +982,6 @@ input:focus-visible {
     #skills {
         margin-bottom: 0px;
     }
-
 
     .container_cards_skills {
         gap: 50px;
